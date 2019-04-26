@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		65E454C36575B315DC77A3A4 /* Pods_NatsysTemplate1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DFD36C14CCFEC002EAC979 /* Pods_NatsysTemplate1.framework */; };
+		A640BA34227335D600904F31 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640BA33227335D600904F31 /* Context.swift */; };
+		A640BA372273363D00904F31 /* Coordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640BA362273363D00904F31 /* Coordinators.swift */; };
+		A640BA39227336B100904F31 /* NavigationControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640BA38227336B100904F31 /* NavigationControllerCoordinator.swift */; };
+		A640BA3B227336D000904F31 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640BA3A227336D000904F31 /* Reducer.swift */; };
+		A640BA3D2273370C00904F31 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640BA3C2273370C00904F31 /* Routing.swift */; };
+		A640BA3F2273373600904F31 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640BA3E2273373600904F31 /* SceneCoordinator.swift */; };
+		A640BA412273375400904F31 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640BA402273375400904F31 /* Store.swift */; };
+		A640BA432273379000904F31 /* Subscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640BA422273379000904F31 /* Subscriptions.swift */; };
+		A640BA452273381C00904F31 /* TabBarControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640BA442273381C00904F31 /* TabBarControllerCoordinator.swift */; };
+		A640BA472273384E00904F31 /* ViewControllerLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640BA462273384E00904F31 /* ViewControllerLifecycle.swift */; };
 		A64786DC227224AA00D0580F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64786DB227224AA00D0580F /* AppDelegate.swift */; };
 		A64786DE227224AA00D0580F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64786DD227224AA00D0580F /* ViewController.swift */; };
 		A64786E1227224AA00D0580F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64786DF227224AA00D0580F /* Main.storyboard */; };
@@ -18,6 +28,17 @@
 /* Begin PBXFileReference section */
 		3E59411CF9919D669677B4F6 /* Pods-NatsysTemplate1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NatsysTemplate1.release.xcconfig"; path = "Pods/Target Support Files/Pods-NatsysTemplate1/Pods-NatsysTemplate1.release.xcconfig"; sourceTree = "<group>"; };
 		50DFD36C14CCFEC002EAC979 /* Pods_NatsysTemplate1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NatsysTemplate1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A640BA33227335D600904F31 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		A640BA362273363D00904F31 /* Coordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinators.swift; sourceTree = "<group>"; };
+		A640BA38227336B100904F31 /* NavigationControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationControllerCoordinator.swift; path = "/Users/amglobal/Library/Mobile Documents/com~apple~CloudDocs/Xcode/NatsysTemplate1/NatsysTemplate1/Cordux/NavigationControllerCoordinator.swift"; sourceTree = "<absolute>"; };
+		A640BA3A227336D000904F31 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		A640BA3C2273370C00904F31 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		A640BA3E2273373600904F31 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		A640BA402273375400904F31 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		A640BA422273379000904F31 /* Subscriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriptions.swift; sourceTree = "<group>"; };
+		A640BA442273381C00904F31 /* TabBarControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerCoordinator.swift; sourceTree = "<group>"; };
+		A640BA462273384E00904F31 /* ViewControllerLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycle.swift; sourceTree = "<group>"; };
+		A640BA482273386F00904F31 /* Cordux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cordux.h; sourceTree = "<group>"; };
 		A64786D8227224AA00D0580F /* NatsysTemplate1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatsysTemplate1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64786DB227224AA00D0580F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A64786DD227224AA00D0580F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +70,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A640BA35227335F000904F31 /* Cordux */ = {
+			isa = PBXGroup;
+			children = (
+				A640BA38227336B100904F31 /* NavigationControllerCoordinator.swift */,
+				A640BA33227335D600904F31 /* Context.swift */,
+				A640BA362273363D00904F31 /* Coordinators.swift */,
+				A640BA3A227336D000904F31 /* Reducer.swift */,
+				A640BA3C2273370C00904F31 /* Routing.swift */,
+				A640BA3E2273373600904F31 /* SceneCoordinator.swift */,
+				A640BA402273375400904F31 /* Store.swift */,
+				A640BA422273379000904F31 /* Subscriptions.swift */,
+				A640BA442273381C00904F31 /* TabBarControllerCoordinator.swift */,
+				A640BA462273384E00904F31 /* ViewControllerLifecycle.swift */,
+				A640BA482273386F00904F31 /* Cordux.h */,
+			);
+			path = Cordux;
+			sourceTree = "<group>";
+		};
 		A64786CF227224AA00D0580F = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +115,7 @@
 				A64786E2227224AA00D0580F /* Assets.xcassets */,
 				A64786E4227224AA00D0580F /* LaunchScreen.storyboard */,
 				A64786E7227224AA00D0580F /* Info.plist */,
+				A640BA35227335F000904F31 /* Cordux */,
 			);
 			path = NatsysTemplate1;
 			sourceTree = "<group>";
@@ -202,6 +242,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A640BA372273363D00904F31 /* Coordinators.swift in Sources */,
+				A640BA39227336B100904F31 /* NavigationControllerCoordinator.swift in Sources */,
+				A640BA3D2273370C00904F31 /* Routing.swift in Sources */,
+				A640BA472273384E00904F31 /* ViewControllerLifecycle.swift in Sources */,
+				A640BA412273375400904F31 /* Store.swift in Sources */,
+				A640BA452273381C00904F31 /* TabBarControllerCoordinator.swift in Sources */,
+				A640BA3F2273373600904F31 /* SceneCoordinator.swift in Sources */,
+				A640BA3B227336D000904F31 /* Reducer.swift in Sources */,
+				A640BA432273379000904F31 /* Subscriptions.swift in Sources */,
+				A640BA34227335D600904F31 /* Context.swift in Sources */,
 				A64786DE227224AA00D0580F /* ViewController.swift in Sources */,
 				A64786DC227224AA00D0580F /* AppDelegate.swift in Sources */,
 			);
@@ -353,7 +403,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YEPB2Q5VF6;
 				INFOPLIST_FILE = NatsysTemplate1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.natsys.NatsysTemplate1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -369,7 +422,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YEPB2Q5VF6;
 				INFOPLIST_FILE = NatsysTemplate1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.natsys.NatsysTemplate1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

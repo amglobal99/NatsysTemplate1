@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/amglobal/Library/Mobile Documents/com~apple~CloudDocs/Xcode/NatsysTemplate1/NatsysTemplate1/Cordux/NavigationControllerCoordinator.swift">
+   </FileRef>
+   <FileRef
       location = "group:NatsysTemplate1.xcodeproj">
    </FileRef>
    <FileRef
