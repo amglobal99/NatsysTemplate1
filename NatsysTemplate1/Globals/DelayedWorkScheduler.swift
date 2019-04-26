@@ -17,6 +17,11 @@ struct WorkItem<Work: WorkType>: Hashable {
     let dispatchWorkItem: DispatchWorkItem
     let hashValue: Int
     
+    //TODO: fix
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(-1)
+    }
+    
     static func ==(lhs: WorkItem<Work>, rhs: WorkItem<Work>) -> Bool {
         return lhs.hashValue == rhs.hashValue
     }
