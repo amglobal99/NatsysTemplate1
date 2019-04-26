@@ -23,6 +23,13 @@
 		A64786E1227224AA00D0580F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64786DF227224AA00D0580F /* Main.storyboard */; };
 		A64786E3227224AA00D0580F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64786E2227224AA00D0580F /* Assets.xcassets */; };
 		A64786E6227224AA00D0580F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64786E4227224AA00D0580F /* LaunchScreen.storyboard */; };
+		A6AF2FE02273418F00168C2C /* PinkyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AF2FDF2273418F00168C2C /* PinkyPromise.swift */; };
+		A6AF2FE22273422100168C2C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AF2FE12273422100168C2C /* Extensions.swift */; };
+		A6C82F0E22733DE700C7DB8B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C82F0D22733DE700C7DB8B /* Theme.swift */; };
+		A6C82F1122733E3100C7DB8B /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C82F1022733E3100C7DB8B /* UITableView.swift */; };
+		A6C82F1422733E7000C7DB8B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C82F1322733E7000C7DB8B /* UIViewController.swift */; };
+		A6C82F1622733EB000C7DB8B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C82F1522733EB000C7DB8B /* UIView.swift */; };
+		A6FEFBFE22734344008DFEA0 /* ClassNameNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FEFBFD22734344008DFEA0 /* ClassNameNibLoadable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +53,13 @@
 		A64786E2227224AA00D0580F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A64786E5227224AA00D0580F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A64786E7227224AA00D0580F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6AF2FDF2273418F00168C2C /* PinkyPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkyPromise.swift; sourceTree = "<group>"; };
+		A6AF2FE12273422100168C2C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A6C82F0D22733DE700C7DB8B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A6C82F1022733E3100C7DB8B /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		A6C82F1322733E7000C7DB8B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		A6C82F1522733EB000C7DB8B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A6FEFBFD22734344008DFEA0 /* ClassNameNibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameNibLoadable.swift; sourceTree = "<group>"; };
 		D22BFC53DC54508D51C93ED1 /* Pods-NatsysTemplate1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NatsysTemplate1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NatsysTemplate1/Pods-NatsysTemplate1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +123,7 @@
 		A64786DA227224AA00D0580F /* NatsysTemplate1 */ = {
 			isa = PBXGroup;
 			children = (
+				A6C82F0F22733E0400C7DB8B /* Globals */,
 				A64786DB227224AA00D0580F /* AppDelegate.swift */,
 				A64786DD227224AA00D0580F /* ViewController.swift */,
 				A64786DF227224AA00D0580F /* Main.storyboard */,
@@ -116,8 +131,30 @@
 				A64786E4227224AA00D0580F /* LaunchScreen.storyboard */,
 				A64786E7227224AA00D0580F /* Info.plist */,
 				A640BA35227335F000904F31 /* Cordux */,
+				A6C82F1222733E5B00C7DB8B /* Extensions */,
 			);
 			path = NatsysTemplate1;
+			sourceTree = "<group>";
+		};
+		A6C82F0F22733E0400C7DB8B /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				A6C82F0D22733DE700C7DB8B /* Theme.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		A6C82F1222733E5B00C7DB8B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A6C82F1022733E3100C7DB8B /* UITableView.swift */,
+				A6C82F1322733E7000C7DB8B /* UIViewController.swift */,
+				A6C82F1522733EB000C7DB8B /* UIView.swift */,
+				A6AF2FDF2273418F00168C2C /* PinkyPromise.swift */,
+				A6AF2FE12273422100168C2C /* Extensions.swift */,
+				A6FEFBFD22734344008DFEA0 /* ClassNameNibLoadable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BF848BD524D86C5BBF84D505 /* Frameworks */ = {
@@ -242,10 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6FEFBFE22734344008DFEA0 /* ClassNameNibLoadable.swift in Sources */,
+				A6C82F1622733EB000C7DB8B /* UIView.swift in Sources */,
+				A6AF2FE22273422100168C2C /* Extensions.swift in Sources */,
 				A640BA372273363D00904F31 /* Coordinators.swift in Sources */,
 				A640BA39227336B100904F31 /* NavigationControllerCoordinator.swift in Sources */,
 				A640BA3D2273370C00904F31 /* Routing.swift in Sources */,
 				A640BA472273384E00904F31 /* ViewControllerLifecycle.swift in Sources */,
+				A6C82F0E22733DE700C7DB8B /* Theme.swift in Sources */,
 				A640BA412273375400904F31 /* Store.swift in Sources */,
 				A640BA452273381C00904F31 /* TabBarControllerCoordinator.swift in Sources */,
 				A640BA3F2273373600904F31 /* SceneCoordinator.swift in Sources */,
@@ -254,6 +295,9 @@
 				A640BA34227335D600904F31 /* Context.swift in Sources */,
 				A64786DE227224AA00D0580F /* ViewController.swift in Sources */,
 				A64786DC227224AA00D0580F /* AppDelegate.swift in Sources */,
+				A6C82F1122733E3100C7DB8B /* UITableView.swift in Sources */,
+				A6C82F1422733E7000C7DB8B /* UIViewController.swift in Sources */,
+				A6AF2FE02273418F00168C2C /* PinkyPromise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
