@@ -9,3 +9,8 @@
 import Foundation
 
 
+func dispatch_after(_ seconds: Double, block: @escaping ()->()) {
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + seconds, execute: block)
+}
+
+

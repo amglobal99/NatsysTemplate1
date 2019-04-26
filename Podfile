@@ -8,4 +8,5 @@ target 'NatsysTemplate1' do
   # Pods for NatsysTemplate1
   pod 'PinkyPromise'
   pod 'IGListKit'
+  pod 'CocoaLumberjack/Swift'
 end
