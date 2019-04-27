@@ -23,6 +23,7 @@
 		A64786E3227224AA00D0580F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64786E2227224AA00D0580F /* Assets.xcassets */; };
 		A64786E6227224AA00D0580F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64786E4227224AA00D0580F /* LaunchScreen.storyboard */; };
 		A68811A72273E20C001BBE90 /* NavigationControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68811A62273E20C001BBE90 /* NavigationControllerCoordinator.swift */; };
+		A68811A92274B650001BBE90 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68811A82274B650001BBE90 /* Reachability.swift */; };
 		A6AF2FE02273418F00168C2C /* PinkyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AF2FDF2273418F00168C2C /* PinkyPromise.swift */; };
 		A6AF2FE22273422100168C2C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AF2FE12273422100168C2C /* Extensions.swift */; };
 		A6BA6489227347F800727B9F /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BA6488227347F800727B9F /* DateUtils.swift */; };
@@ -55,6 +56,7 @@
 		A64786E5227224AA00D0580F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A64786E7227224AA00D0580F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A68811A62273E20C001BBE90 /* NavigationControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerCoordinator.swift; sourceTree = "<group>"; };
+		A68811A82274B650001BBE90 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A6AF2FDF2273418F00168C2C /* PinkyPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkyPromise.swift; sourceTree = "<group>"; };
 		A6AF2FE12273422100168C2C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A6BA6488227347F800727B9F /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
@@ -136,8 +138,17 @@
 				A64786E7227224AA00D0580F /* Info.plist */,
 				A640BA35227335F000904F31 /* Cordux */,
 				A6C82F1222733E5B00C7DB8B /* Extensions */,
+				A68811AA2274B68E001BBE90 /* Utils */,
 			);
 			path = NatsysTemplate1;
+			sourceTree = "<group>";
+		};
+		A68811AA2274B68E001BBE90 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A68811A82274B650001BBE90 /* Reachability.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		A6C82F0F22733E0400C7DB8B /* Globals */ = {
@@ -305,6 +316,7 @@
 				A6BA648B2273481700727B9F /* DelayedWorkScheduler.swift in Sources */,
 				A64786DC227224AA00D0580F /* AppDelegate.swift in Sources */,
 				A6C82F1122733E3100C7DB8B /* UITableView.swift in Sources */,
+				A68811A92274B650001BBE90 /* Reachability.swift in Sources */,
 				A6BA6489227347F800727B9F /* DateUtils.swift in Sources */,
 				A6C82F1422733E7000C7DB8B /* UIViewController.swift in Sources */,
 				A6AF2FE02273418F00168C2C /* PinkyPromise.swift in Sources */,
