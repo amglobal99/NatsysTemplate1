@@ -11,6 +11,13 @@ import Foundation
 open class DateUtils {
     // there is no timezone. this is an old format and eventually we'll convert to a new format with timezone
     
+    
+    
+    enum DateError: Error {
+        case conversionError(String)
+    }
+    
+    
     //"2018-03-07T14:47:41Z"
     fileprivate static let dateTimeFormatCompact = "yyyy-MM-dd'T'HH:mm:ss'Z'"
     fileprivate static let dateTimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
@@ -320,40 +327,41 @@ open class DateUtils {
         return displayableTimeFormatter.string(from: date)
     }
     
-//    public static func stringToDate(_ string: String) -> Date {
-//        do {
-//            return try stringToDateOrError(string)
-//        } catch {
-//            fatalError("\(error)")
-//        }
-//    }
+    public static func stringToDate(_ string: String) -> Date {
+        do {
+            return try stringToDateOrError(string)
+        } catch {
+            fatalError("\(error)")
+        }
+    }
     
-//    public static func stringToDateOrError(_ string: String) throws -> Date {
-//        if let date = formatterDate.date(from: string){
-//            return date
-//        } else {
-//           /// try DatabaseError.throwError("Date \(string) is not parsable in format \(dateFormat)")
-//        }
-//    }
+    public static func stringToDateOrError(_ string: String) throws -> Date {
+        if let date = formatterDate.date(from: string){
+            return date
+        } else {
+           /// try DatabaseError.throwError("Date \(string) is not parsable in format \(dateFormat)")
+            throw DateError.conversionError("Conversion failed")
+        }
+    }
     
-//    public static func stringToDateTime(_ string: String) -> Date {
-//        do {
-//            return try stringToDateTimeOrError(string)
-//        } catch {
-//            fatalError("\(error)")
-//        }
-//    }
+    public static func stringToDateTime(_ string: String) -> Date {
+        do {
+            return try stringToDateTimeOrError(string)
+        } catch {
+            fatalError("\(error)")
+        }
+    }
     
-//    public static func stringToDateTimeOrError(_ string: String) throws -> Date {
-//        if let dateTime = formatterDateTime.date(from: string){
-//            return dateTime
-//        } else if let dateTime = formatterDateTimeWithTimezone.date(from: string) {
-//            // if it's not in the old format, see if we're getting data from the new format with timezone
-//            return dateTime
-//        } else {
-//           // try DatabaseError.throwError("Date \(string) is not parsable in formats \(dateTimeFormat) or \(dateTimeWithTimezoneFormat)")
-//        }
-//    }
+    public static func stringToDateTimeOrError(_ string: String) throws -> Date {
+        if let dateTime = formatterDateTime.date(from: string){
+            return dateTime
+        } else if let dateTime = formatterDateTimeWithTimezone.date(from: string) {
+            // if it's not in the old format, see if we're getting data from the new format with timezone
+            return dateTime
+        } else {
+            throw DateError.conversionError("something happened")
+        }
+    }
     
     public static func displayableDate(from date: String) -> Date? {
         return displayableDateFormatter.date(from: date)
@@ -449,31 +457,31 @@ open class DateUtils {
         }
     }
     
-//    public static func stringToDateOptional(_ string: String?) -> Date? {
-//        do {
-//            if let string = string, string.count > 0 {
-//                return try stringToDateOrError(string)
-//            } else {
-//                return nil
-//            }
-//        } catch {
-//
-//            return nil
-//        }
-//    }
+    public static func stringToDateOptional(_ string: String?) -> Date? {
+        do {
+            if let string = string, string.count > 0 {
+                return try stringToDateOrError(string)
+            } else {
+                return nil
+            }
+        } catch {
+
+            return nil
+        }
+    }
     
-//    public static func stringToDateTimeOptional(_ string: String?) -> Date? {
-//        do {
-//            if let string = string, string.count > 0 {
-//                return try stringToDateTimeOrError(string)
-//            } else {
-//                return nil
-//            }
-//        } catch {
-//            
-//            return nil
-//        }
-//    }
+    public static func stringToDateTimeOptional(_ string: String?) -> Date? {
+        do {
+            if let string = string, string.count > 0 {
+                return try stringToDateTimeOrError(string)
+            } else {
+                return nil
+            }
+        } catch {
+            
+            return nil
+        }
+    }
     
     public static func dateFrom(seconds: Int) -> Date? {
         return Date().addSecondsToCurrentDate(seconds)

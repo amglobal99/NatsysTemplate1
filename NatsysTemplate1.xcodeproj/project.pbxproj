@@ -23,6 +23,9 @@
 		A64786E1227224AA00D0580F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64786DF227224AA00D0580F /* Main.storyboard */; };
 		A64786E3227224AA00D0580F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64786E2227224AA00D0580F /* Assets.xcassets */; };
 		A64786E6227224AA00D0580F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64786E4227224AA00D0580F /* LaunchScreen.storyboard */; };
+		A664D5912273D6F300AC8A58 /* NavigationControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664D5902273D6F200AC8A58 /* NavigationControllerCoordinator.swift */; };
+		A664D5932273D73200AC8A58 /* NavigationControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664D5922273D73200AC8A58 /* NavigationControllerCoordinator.swift */; };
+		A664D5952273D73900AC8A58 /* NavigationControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664D5942273D73900AC8A58 /* NavigationControllerCoordinator.swift */; };
 		A6AF2FE02273418F00168C2C /* PinkyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AF2FDF2273418F00168C2C /* PinkyPromise.swift */; };
 		A6AF2FE22273422100168C2C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AF2FE12273422100168C2C /* Extensions.swift */; };
 		A6BA6489227347F800727B9F /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BA6488227347F800727B9F /* DateUtils.swift */; };
@@ -55,6 +58,9 @@
 		A64786E2227224AA00D0580F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A64786E5227224AA00D0580F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A64786E7227224AA00D0580F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A664D5902273D6F200AC8A58 /* NavigationControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationControllerCoordinator.swift; path = "/Users/amglobal/Library/Mobile Documents/com~apple~CloudDocs/Xcode/NatsysTemplate1/NatsysTemplate1/Extensions/NavigationControllerCoordinator.swift"; sourceTree = "<absolute>"; };
+		A664D5922273D73200AC8A58 /* NavigationControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationControllerCoordinator.swift; path = "/Users/amglobal/Library/Mobile Documents/com~apple~CloudDocs/Xcode/NatsysTemplate1/NatsysTemplate1/Cordux/NavigationControllerCoordinator.swift"; sourceTree = "<absolute>"; };
+		A664D5942273D73900AC8A58 /* NavigationControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationControllerCoordinator.swift; path = "/Users/amglobal/Library/Mobile Documents/com~apple~CloudDocs/Xcode/NatsysTemplate1/NatsysTemplate1/Extensions/NavigationControllerCoordinator.swift"; sourceTree = "<absolute>"; };
 		A6AF2FDF2273418F00168C2C /* PinkyPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkyPromise.swift; sourceTree = "<group>"; };
 		A6AF2FE12273422100168C2C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A6BA6488227347F800727B9F /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
@@ -92,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				A640BA38227336B100904F31 /* NavigationControllerCoordinator.swift */,
+				A664D5922273D73200AC8A58 /* NavigationControllerCoordinator.swift */,
 				A640BA33227335D600904F31 /* Context.swift */,
 				A640BA362273363D00904F31 /* Coordinators.swift */,
 				A640BA3A227336D000904F31 /* Reducer.swift */,
@@ -153,6 +160,8 @@
 		A6C82F1222733E5B00C7DB8B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A664D5902273D6F200AC8A58 /* NavigationControllerCoordinator.swift */,
+				A664D5942273D73900AC8A58 /* NavigationControllerCoordinator.swift */,
 				A6C82F1022733E3100C7DB8B /* UITableView.swift */,
 				A6C82F1322733E7000C7DB8B /* UIViewController.swift */,
 				A6C82F1522733EB000C7DB8B /* UIView.swift */,
@@ -287,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A664D5952273D73900AC8A58 /* NavigationControllerCoordinator.swift in Sources */,
 				A6FEFBFE22734344008DFEA0 /* ClassNameNibLoadable.swift in Sources */,
 				A6C82F1622733EB000C7DB8B /* UIView.swift in Sources */,
 				A6AF2FE22273422100168C2C /* Extensions.swift in Sources */,
@@ -303,8 +313,10 @@
 				A640BA34227335D600904F31 /* Context.swift in Sources */,
 				A64786DE227224AA00D0580F /* ViewController.swift in Sources */,
 				A6BA648B2273481700727B9F /* DelayedWorkScheduler.swift in Sources */,
+				A664D5912273D6F300AC8A58 /* NavigationControllerCoordinator.swift in Sources */,
 				A64786DC227224AA00D0580F /* AppDelegate.swift in Sources */,
 				A6C82F1122733E3100C7DB8B /* UITableView.swift in Sources */,
+				A664D5932273D73200AC8A58 /* NavigationControllerCoordinator.swift in Sources */,
 				A6BA6489227347F800727B9F /* DateUtils.swift in Sources */,
 				A6C82F1422733E7000C7DB8B /* UIViewController.swift in Sources */,
 				A6AF2FE02273418F00168C2C /* PinkyPromise.swift in Sources */,
@@ -457,7 +469,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YEPB2Q5VF6;
 				INFOPLIST_FILE = NatsysTemplate1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.natsys.NatsysTemplate1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -473,7 +488,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YEPB2Q5VF6;
 				INFOPLIST_FILE = NatsysTemplate1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.natsys.NatsysTemplate1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
