@@ -8,23 +8,27 @@ PODS:
     - IGListKit/Diffing
   - IGListKit/Diffing (3.4.0)
   - PinkyPromise (0.6.2)
+  - SwiftSpinner (1.6.2)
 
 DEPENDENCIES:
   - CocoaLumberjack/Swift
   - IGListKit
   - PinkyPromise
+  - SwiftSpinner
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CocoaLumberjack
     - IGListKit
     - PinkyPromise
+    - SwiftSpinner
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   PinkyPromise: 182da8b6e5afa6f393faed4822d45b5007e91ede
+  SwiftSpinner: 3a4c6dea425e5a31b908a8b1dd5dcd1ad4d96340
 
-PODFILE CHECKSUM: 46fcfc64515f39fc23acc20bd9fe52478c02f22a
+PODFILE CHECKSUM: d396dcf9ff65fd2b9e73ca21fe6d25b46ee4ec38
 
 COCOAPODS: 1.5.3

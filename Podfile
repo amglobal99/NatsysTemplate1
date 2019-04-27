@@ -9,4 +9,5 @@ target 'NatsysTemplate1' do
   pod 'PinkyPromise'
   pod 'IGListKit'
   pod 'CocoaLumberjack/Swift'
+  pod 'SwiftSpinner'
 end

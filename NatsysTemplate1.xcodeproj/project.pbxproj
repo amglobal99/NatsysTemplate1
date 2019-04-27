@@ -24,6 +24,8 @@
 		A64786E6227224AA00D0580F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64786E4227224AA00D0580F /* LaunchScreen.storyboard */; };
 		A68811A72273E20C001BBE90 /* NavigationControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68811A62273E20C001BBE90 /* NavigationControllerCoordinator.swift */; };
 		A68811A92274B650001BBE90 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68811A82274B650001BBE90 /* Reachability.swift */; };
+		A68811AC2274B70D001BBE90 /* LoggerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68811AB2274B70D001BBE90 /* LoggerFactory.swift */; };
+		A68811AE2274B75B001BBE90 /* InternetConnectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68811AD2274B75B001BBE90 /* InternetConnectionHelper.swift */; };
 		A6AF2FE02273418F00168C2C /* PinkyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AF2FDF2273418F00168C2C /* PinkyPromise.swift */; };
 		A6AF2FE22273422100168C2C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AF2FE12273422100168C2C /* Extensions.swift */; };
 		A6BA6489227347F800727B9F /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BA6488227347F800727B9F /* DateUtils.swift */; };
@@ -57,6 +59,8 @@
 		A64786E7227224AA00D0580F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A68811A62273E20C001BBE90 /* NavigationControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerCoordinator.swift; sourceTree = "<group>"; };
 		A68811A82274B650001BBE90 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A68811AB2274B70D001BBE90 /* LoggerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerFactory.swift; sourceTree = "<group>"; };
+		A68811AD2274B75B001BBE90 /* InternetConnectionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionHelper.swift; sourceTree = "<group>"; };
 		A6AF2FDF2273418F00168C2C /* PinkyPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkyPromise.swift; sourceTree = "<group>"; };
 		A6AF2FE12273422100168C2C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A6BA6488227347F800727B9F /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				A68811A82274B650001BBE90 /* Reachability.swift */,
+				A68811AB2274B70D001BBE90 /* LoggerFactory.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				A6C82F0D22733DE700C7DB8B /* Theme.swift */,
 				A6BA6488227347F800727B9F /* DateUtils.swift */,
 				A6BA648A2273481700727B9F /* DelayedWorkScheduler.swift */,
+				A68811AD2274B75B001BBE90 /* InternetConnectionHelper.swift */,
 			);
 			path = Globals;
 			sourceTree = "<group>";
@@ -261,12 +267,14 @@
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
 				"${BUILT_PRODUCTS_DIR}/PinkyPromise/PinkyPromise.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinkyPromise.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -300,10 +308,12 @@
 			files = (
 				A6FEFBFE22734344008DFEA0 /* ClassNameNibLoadable.swift in Sources */,
 				A6C82F1622733EB000C7DB8B /* UIView.swift in Sources */,
+				A68811AE2274B75B001BBE90 /* InternetConnectionHelper.swift in Sources */,
 				A6AF2FE22273422100168C2C /* Extensions.swift in Sources */,
 				A68811A72273E20C001BBE90 /* NavigationControllerCoordinator.swift in Sources */,
 				A640BA372273363D00904F31 /* Coordinators.swift in Sources */,
 				A640BA3D2273370C00904F31 /* Routing.swift in Sources */,
+				A68811AC2274B70D001BBE90 /* LoggerFactory.swift in Sources */,
 				A640BA472273384E00904F31 /* ViewControllerLifecycle.swift in Sources */,
 				A6C82F0E22733DE700C7DB8B /* Theme.swift in Sources */,
 				A640BA412273375400904F31 /* Store.swift in Sources */,
@@ -469,10 +479,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YEPB2Q5VF6;
 				INFOPLIST_FILE = NatsysTemplate1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.natsys.NatsysTemplate1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -488,10 +495,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YEPB2Q5VF6;
 				INFOPLIST_FILE = NatsysTemplate1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.natsys.NatsysTemplate1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
